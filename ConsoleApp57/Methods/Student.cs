@@ -26,5 +26,13 @@ internal class Student
     {
         return Grade >= 51;
     }
+    public void IncreaseGrade(double amount)
+    {
+        Grade += amount;
 
+        if (Grade > 100)
+        {
+            Grade = 100;
+        }
+    }
 }
